@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid grey;
+}
+
+.cajaLogo{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 190px;
+    margin-left: 35px;
+}
+
+#divisor{
+    height: 60px;
+    margin-left: 40px;
+    border-left: 0.5px solid grey;
+}
+
+.textoHeader{
+    display: flex;
+    justify-content: left;
+    width: 46%;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    color: #4a4a4a;
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px 0px 20px;
+}
+
+#divisorTituloBusqueda{
+    height: 60px;
+    margin-right: 10px;
+    border-right: 0.5px solid grey;
+}
+
+.barraBusqueda{
+    display: flex;
+    margin-right: 40px;
+}
+
+input{
+    border: 0.5px solid grey;
+    width: 280px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-right: 12px;
+}
+
+#busqueda{
+    width: 60px;
+    background-color: rgba(23, 130, 75, 0.724);
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4a4a4a;
+    padding: 12px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.contenidoPrincipal{
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+}
+
+.partearribaPrincipio{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.ladoIzquierdo{
+    width: 68vw;
+}
+
+#tituloItalia{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 55px;
+    margin: 30px 0px 0px 80px;
+}
+
+#textoPrincipio{
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 85%;
+    line-height: 1.8;
+}
+
+#fotoPortada{
+    width: 82%;
+    height: 60%;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.ladoDerecho{
+    width: 30vw;
+}
+
+.idioma{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.idioma h3{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+#lenguage-select option{
+    margin-top: 20px;
+    width: 20%;
+}
+
+#imgInfoDerecho{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#imgLadoPrincipal{
+    margin-top: 70px;
+    border-radius: 15px;
+    width: 65%;
+}
+
+.infoDerecha{
+    padding: 20px 0px 0px 40px;
+}
+
+.infoDerecha p{
+    font-size: 15px;
+    margin: 25px 0px 0px 0px;
+}
+
+.infoPrincipio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    width: 65%;
+    line-height: 1.8;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.infoPrincipio p{
+    margin: 20px 0px 0px 80px;
+}
+
+#imgLarga{
+    display: flex;
+    justify-content: center;
+    width: 98vw;
+}
+
+#imgLarga1{
+    height: auto;
+    width: 80vw
+}
+
+.arquitectura{
+    margin-left: 80px;
+    width: 100%;
+}
+
+#tituloarquitectura{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 55px;
+    margin-top: 50px;
+}
+
+.estructura1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.infoArquitectura{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+.infoArquitectura p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.catedral{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+#imgCatedral{
+    max-width: 36%;
+    border-radius: 30px;
+    border: 2px solid black;
+    border-style: dashed;
+}
+
+.infoCatedral{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 80px;
+}
+
+#tituloCatedral{
+    width: 58%;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 250%;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid grey;
+}
+
+.descripcionCatedral{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 78%;
+}
+
+.descripcionCatedral p{
+    text-align: left;
+    font-size: 17px;
+    margin-top: 15px;
+}
