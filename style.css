@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&display=swap');
 
 *{
@@ -17,50 +16,133 @@ header{
     border-bottom: 0.5px solid grey;
 }
 
-.cajaLogo{
+.boxLogo{
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin-left: 70px;
 }
 
 #logo{
     width: 190px;
-    margin-left: 35px;
 }
 
-#divisor{
+#divider{
+    margin-left: 60px;
     height: 60px;
-    margin-left: 40px;
-    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;
 }
 
-.textoHeader{
+.textHeader{
     display: flex;
-    justify-content: left;
-    width: 46%;
+    align-items: center;
 }
 
-h2{
+h1{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 32px;
+    font-size: 33px;
     color: #4a4a4a;
-    width: 100%;
-    height: 60px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 35px 0px 35px;
 }
 
-#divisorTituloBusqueda{
-    height: 60px;
-    margin-right: 10px;
-    border-right: 0.5px solid grey;
-}
-
-.barraBusqueda{
+.translator{
     display: flex;
-    margin-right: 40px;
+    align-items: center;
+    margin-right: 60px;
+}
+
+#translatorTitledivisor{
+    margin-right: 65px;
+    height: 60px;
+    border-left: 0.5px solid grey;
+}
+
+#svgTranslator{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px 8px 12px;
+    border-radius: 12px;
+    border: 0.5px solid grey;
+    cursor: pointer;
+}
+
+#svgTranslator h4{
+    padding-left: 15px;
+    font-size: 18px;
+} 
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4a4a4a;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 12px 5px 12px 5px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.partTopPrinciple{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    width: 13%;
+}
+
+#textPrinciple{
+    font-size: 18px;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#coverPhoto{
+    width: 95%;
+    border-radius: 20px;
+}
+
+#startPartSeparator{
+    border-right: 1px solid grey;
+    margin-right: 35px;
+    margin-top: 50px;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
 }
 
 input{
@@ -72,8 +154,9 @@ input{
     margin-right: 12px;
 }
 
-#busqueda{
+#search{
     width: 60px;
+    height: 35px;
     background-color: rgba(23, 130, 75, 0.724);
     cursor: pointer;
     border-radius: 5px;
@@ -81,193 +164,1103 @@ input{
     color: white;
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    background-color: #4a4a4a;
-    padding: 12px;
-    width: 100%;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-}
-
-.contenidoPrincipal{
+.containerInfoRight{
     display: flex;
     flex-direction: column;
-    width: 98vw;
-}
-
-.partearribaPrincipio{
-    display: flex;
+    align-items: center;
     width: 100%;
-    height: 100vh;
-}
-
-.ladoIzquierdo{
-    width: 68vw;
-}
-
-#tituloItalia{
-    font-family: "Amatic SC", sans-serif;
-    font-size: 55px;
-    margin: 30px 0px 0px 80px;
-}
-
-#textoPrincipio{
-    font-size: 20px;
-    margin-left: 80px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 85%;
-    line-height: 1.8;
-}
-
-#fotoPortada{
-    width: 82%;
-    height: 60%;
-    margin-left: 80px;
-    margin-top: 20px;
-}
-
-.ladoDerecho{
-    width: 30vw;
-}
-
-.idioma{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.idioma h3{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: 40px;
-}
-
-#lenguage-select option{
-    margin-top: 20px;
-    width: 20%;
-}
-
-#imgInfoDerecho{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-#imgLadoPrincipal{
-    margin-top: 70px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    padding-top: 25px;
     border-radius: 15px;
-    width: 65%;
 }
 
-.infoDerecha{
-    padding: 20px 0px 0px 40px;
+#imgSidePrincipal{
+    display: flex;
+    width: 80%;
+    border-radius: 15px;
 }
 
-.infoDerecha p{
-    font-size: 15px;
-    margin: 25px 0px 0px 0px;
+.infoRight{
+    margin: 20px 0px 20px 30px;
 }
 
-.infoPrincipio{
+.infoRight p{
+    padding: 6px 0px 6px 0px;
+}
+
+.principleInfo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 20px;
-    width: 65%;
-    line-height: 1.8;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px
 }
 
-.infoPrincipio p{
-    margin: 20px 0px 0px 80px;
-}
-
-#imgLarga{
+.principleInfoTextContainers{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 82%;
+}
+
+.principleInfo p{
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+}
+
+.imgLong{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 98vw;
-}
-
-#imgLarga1{
-    height: auto;
-    width: 80vw
-}
-
-.arquitectura{
-    margin-left: 80px;
     width: 100%;
 }
 
-#tituloarquitectura{
-    font-family: "Amatic SC", sans-serif;
-    font-size: 55px;
-    margin-top: 50px;
-}
-
-.estructura1{
+#imgLong1{
     display: flex;
-    flex-direction: column;
+    width: 80%;
     margin-top: 10px;
 }
 
-.infoArquitectura{
-    display: flex;
-    flex-direction: column;
-    width: 98%;
+#showarchitecture{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
 }
 
-.infoArquitectura p{
-    font-size: 20px;
-    line-height: 1.8;
+.architecture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.infoarchitecture{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+}
+
+.containersTextInfoarchitecture{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containersTextInfoarchitecture p{
+    line-height: 1.5;
+    font-size: 18px;
     margin-top: 20px;
 }
 
-.catedral{
+.cathedral{
     display: flex;
-    margin-top: 70px;
-    margin-left: 50px;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
 }
 
-#imgCatedral{
-    max-width: 36%;
-    border-radius: 30px;
+.contentCathedral{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#imgStructures{
+    width: 430px;
+    height: 350px;
+    border-radius: 15px;
     border: 2px solid black;
     border-style: dashed;
 }
 
-.infoCatedral{
+.infoCathedral{
     display: flex;
     flex-direction: column;
-    margin: 20px 0px 0px 80px;
+    padding-left: 30px;
 }
 
-#tituloCatedral{
-    width: 58%;
+.cathedralTitleContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#titleCathedral{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
     font-family: "Amatic SC", sans-serif;
     font-size: 250%;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 0.5px solid grey;
 }
 
-.descripcionCatedral{
+.containersTextInfoCathedral{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    width: 78%;
+    width: 100%;
+    padding-top: 5px;
 }
 
-.descripcionCatedral p{
-    text-align: left;
-    font-size: 17px;
+.containersTextInfoCathedral p{
+    text-align: right;
+    font-size: 16px;
     margin-top: 15px;
+    line-height: 1.2;
+}
+
+.romanarch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contentRomanarc{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 70%;
+}
+
+.infoarchRome{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+#arcoTitleRome{
+    width: 40%;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 250%;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid grey;
+}
+
+.containersTextInfoarcoRoma{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.containersTextInfoarcoRoma p{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.2;
+}
+
+.colosseum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contentColosseum{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.infoColosseum{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+#titleColosseum{
+    display: flex;
+    justify-content: flex-start;
+    width: 28%;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 250%;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid grey;
+}
+
+.containersTextInfoColosseum{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.containersTextInfoColosseum p{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.2;
+}
+
+.pisaTower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contentPisaTower{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 70%;
+}
+
+.infoPisaTower{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+#titlePisaTower{
+    width: 40%;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 250%;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid grey;
+}
+
+.containersTextInfoPisaTower{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.containersTextInfoPisaTower p{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.2;
+}
+
+#showculture{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.culture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.infoCulture{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+}
+
+.containersTextInfoCulture{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containersTextInfoCulture p{
+    line-height: 1.5;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#containerImgCoverCulture{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 35px;
+}
+
+#imgCoverCulture{
+    border-radius: 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.titleWithCultureFlag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.TitleContainerWithCultureFlag{
+    display: flex;
+    align-items: center;
+    width: 82%;
+    padding-top: 65px;
+}
+
+.flag{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+}
+
+#green{
+    width: 100%;
+    height: 1.5vh;
+    background-color: #36741de4;
+}
+
+#white{
+    width: 100%;
+    height: 1.5vh;
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
+#red{
+    width: 100%;
+    height: 1.5vh;
+    background-color: rgba(255, 0, 0, 0.793);
+}
+
+#tituloFineArtsCulture{
+    font-size: 35px;
+    width: 45%;
+    text-align: center;
+}
+
+.infoBellas{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-top: 18px;
+}
+
+.infoBellas p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.bellasartes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBellas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 70%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+}
+
+#imgBellas{
+    width: 26%;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextInfoBellas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+    width: 65%;
+}
+
+.containersTextInfoBellas p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextInfoBellas h2{
+    border-bottom: 1px solid grey;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+#titleLiteratureCulture{
+    font-size: 40px;
+    width: 35%;
+    text-align: center;
+}
+
+.infoLiterature{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin-top: 18px;
+}
+
+.infoLiterature p{
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.literature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divineComedy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 70%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+}
+
+#imgDivineComedy{
+    width: 26%;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextInfoDivineComedy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+    width: 65%;
+}
+
+.containersTextInfoDivineComedy p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextInfoDivineComedy h2{
+    border-bottom: 1px solid grey;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.petrarca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 70%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+}
+
+#imgPetrarca{
+    width: 26%;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextInfoPetrarca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+    width: 65%;
+}
+
+.containersTextInfoPetrarca p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextInfoPetrarca h2{
+    border-bottom: 1px solid grey;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#showgastronomy{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.gastronomy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.infoGastronomy{
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+}
+
+.containersTextInfoGastronomy{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containersTextInfoGastronomy p{
+    line-height: 1.5;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.titleContainerWithFlagGastronomy{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 65px;
+}
+
+.kitchen{
+    display: flex;
+    flex-direction: column;
+}
+
+#titleGastronomyCulture{
+    font-size: 35px;
+    width: 60%;
+    text-align: center;
+}
+
+#infoCooking{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 18px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.kitchencontent{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.carpaccio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 30%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.carpaccio:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    transition-delay: 0s;
+    padding-bottom: 28px;
+
+    #imgCarpaccio{
+        width: 75%;
+        padding: 0px;
+        margin-right: 2px;
+    }
+
+    .containersTextInfoCarpaccio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
+        width: 80%;
+        padding-right: 20px;
+        margin: 0px;
+    }
+
+    #cardTitleContainer{
+        display: none;
+    }
+
+    #cardTitle{
+        display: none;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#cardTitleContainer{
+    display: block;
+}
+
+#cardTitle{
+    display: block;
+    padding-top: 5px;
+    width: 100%;
+}
+
+#imgCarpaccio{
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextInfoCarpaccio{
+    display: none;
+}
+
+.containersTextInfoCarpaccio p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextInfoCarpaccio h2{
+    border-bottom: 1px solid grey;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.risotto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.risotto:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    transition-delay: 0s;
+    padding-bottom: 28px;
+
+    #imgRisotto{
+        width: 75%;
+        padding: 0px;
+        margin-right: 2px;
+    }
+
+    .containersTextInfoRisotto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
+        width: 80%;
+        padding-right: 20px;
+        margin: 0px;
+    }
+
+    #cardTitleContainer{
+        display: none;
+    }
+
+    #cardTitle{
+        display: none;
+    }
+}
+
+#imgRisotto{
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextInfoRisotto{
+    display: none;
+}
+
+.containersTextInfoRisotto p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextInfoRisotto h2{
+    border-bottom: 1px solid grey;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.pizza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.pizza:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    transition-delay: 0s;
+    padding-bottom: 28px;
+
+    #imgPizza{
+        width: 75%;
+        padding: 0px;
+        margin-right: 2px;
+    }
+
+    .pizzaInfoTextContainers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
+        width: 80%;
+        padding-right: 20px;
+        margin: 0px;
+    }
+
+    #cardTitleContainer{
+        display: none;
+    }
+
+    #cardTitle{
+        display: none;
+    }
+}
+
+#imgPizza{
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.pizzaInfoTextContainers{
+    display: none;
+}
+
+.pizzaInfoTextContainers p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.pizzaInfoTextContainers h2{
+    border-bottom: 1px solid grey;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.macarrones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.macarrones:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    transition-delay: 0s;
+    padding-bottom: 28px;
+
+    #imgMacarrones{
+        width: 75%;
+        padding: 0px;
+        margin-right: 2px;
+    }
+
+    .containersTextInfoMacarrones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
+        width: 80%;
+        padding-right: 20px;
+        margin: 0px;
+    }
+
+    #cardTitleContainer{
+        display: none;
+    }
+
+    #cardTitle{
+        display: none;
+    }
+}
+
+#imgMacarrones{
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextInfoMacarrones{
+    display: none;
+}
+
+.containersTextInfoMacarrones p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextInfoMacarrones h2{
+    border-bottom: 1px solid grey;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.bistecca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.bistecca:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    transition-delay: 0s;
+    padding-bottom: 28px;
+
+    #imgBistecca{
+        width: 75%;
+        padding: 0px;
+        margin-right: 2px;
+    }
+
+    .containersTextBisteccaInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
+        width: 85%;
+        padding-right: 20px;
+        margin: 0px;
+    }
+
+    #bisteccaCardTitleContainer{
+        display: none;
+    }
+
+    #bisteccaCardtitle{
+        display: none;
+    }
+}
+
+#bisteccaCardTitleContainer{
+    padding-top: 15px;
+    width: 100%;
+}
+
+#bisteccaCardtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 35px;
+}
+
+#imgBistecca{
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextBisteccaInfo{
+    display: none;
+}
+
+.containersTextBisteccaInfo p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextBisteccaInfo h2{
+    border-bottom: 1px solid grey;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.mazzarelle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.188);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.mazzarelle:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    transition-delay: 0s;
+    padding-bottom: 28px;
+
+    #imgMazzarelle{
+        width: 75%;
+        padding: 0px;
+        margin-right: 2px;
+    }
+
+    .containersTextInfoMazzarelle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 35px;
+        width: 80%;
+        padding-right: 20px;
+        margin: 0px;
+    }
+
+    #cardTitleContainer{
+        display: none;
+    }
+
+    #cardTitle{
+        display: none;
+    }
+}
+
+#imgMazzarelle{
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius: 12%;
+}
+
+.containersTextInfoMazzarelle{
+    display: none;
+}
+
+.containersTextInfoMazzarelle p{
+    line-height: 1.5;
+    text-align: start;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containersTextInfoMazzarelle h2{
+    border-bottom: 1px solid grey;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    padding-left: 100px;
 }

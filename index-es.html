@@ -8,83 +8,379 @@
 </head>
 <body>
     <header>
-        <div class="cajaLogo">
+        <div class="boxLogo">
             <figure>
                 <img id="logo" src="images/logoItalia.png" alt="">
             </figure>
-            <div id="divisor"></div>
+            <div id="divider"></div>
         </div>
-        <div class="textoHeader">
-            <h2>Vive la Dolce Vita: Italia en Todo su Esplendor</h2>
-            <div id="divisorTituloBusqueda"></div>
+        <div class="textHeader">
+            <h1 data-translate="1">Vive la Dolce Vita: Italia en Todo su Esplendor</h1>
         </div>
-        <div class="barraBusqueda">
-            <input type="text" placeholder="Buscar...">
-            <button id="busqueda">Buscar</button>
+        <div class="translator" id="translatorButton">
+            <div id="translatorTitledivisor"></div>
+            <div id="svgTranslator">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                </svg>
+                <h4 data-translate="2">Ingles</h4>
+            </div>
         </div>
     </header>
     <nav>
-        <a href="#">Descubrir</a>
-        <a href="#">Cultura</a>
-        <a href="#">Arquitectura</a>
-        <a href="#">Gastronimia</a>
-        <a href="#">Fauna y Flora</a>
-        <a href="#">Historia</a>
-    </nav>
-    <section class="contenidoPrincipal">
-        <div class="partearribaPrincipio">
-            <div class="ladoIzquierdo">
-                <h1 id="tituloItalia">Italia</h1>
-                <p id="textoPrincipio">Te explicamos todo sobre Italia y sus características físicas y culturales. Además, cómo es su economía, religión y la historia de este país</p>
-                <img id="fotoPortada" src="images/fotoPortada.png" alt="">
+        <a href="#" onclick="showSection('home')" data-translate="3">Inicio</a>
+        <a href="#" onclick="showSection('showculture' )" data-translate="4">Cultura</a>
+        <a href="#" onclick="showSection('showarchitecture' )" data-translate="5">Arquitectura</a>
+        <a href="#" onclick="showSection('showgastronomy')" data-translate="6">Gastronomia</a>
+    </nav>    
+    <section class="mainContent" id="home">
+        <div class="partTopPrinciple">
+            <div class="leftSide">
+                <h2 data-translate="7">Italia</h2>
+                <p id="textPrinciple" data-translate="8">Te explicamos todo sobre Italia y sus características físicas y culturales. Además, cómo es su economía, religión y la historia de este país</p>
+                <img id="coverPhoto" src="images/fotoPortada.png" alt="">
             </div>
-            <div class="ladoDerecho">
-                <div class="idioma">
-                    <h3>Selecciona un idioma</h3>
-                    <select id="language-select">
-                        <option value="en">Ingles</option>
-                        <option value="es">Español</option>
-                    </select>       
-                </div>          
-                <figure id="imgInfoDerecho">
-                    <img id="imgLadoPrincipal" src="images/imgLadoPrincipal.png" alt="">
-                </figure>
-                <div class="infoDerecha">
-                    <p><b>Capital:</b> Roma</p>
-                    <p><b>Pais:</b> Republica Italiana</p>
-                    <p><b>Presidente de la Republica:</b> Sergio Mattarella</p>
-                    <p><b>Poblacion total:</b> 58 870 764</p>
-                    <p><b>Moneda:</b> Euro €</p>
-                    <p><b>Idiomas oficiales:</b> Italiano</p>
+            <div id="startPartSeparator"></div>
+            <div class="rightSide">
+                <div class="searchBar">
+                    <input type="text" placeholder="Buscar...">
+                    <button id="search" data-translate="9">Buscar</button>
+                </div>
+                <div class="containerInfoRight">
+                    <img id="imgSidePrincipal" src="images/imgLadoPrincipal.png" alt="">
+                    <div class="infoRight">
+                        <p data-translate="10"><b>Capital:</b> Roma</p>
+                        <p data-translate="11"><b>Pais:</b> Republica Italiana</p>
+                        <p data-translate="12"><b>Presidente de la Republica:</b> Sergio Mattarella</p>
+                        <p data-translate="13"><b>Poblacion total:</b> 58 870 764</p>
+                        <p data-translate="14"><b>Moneda:</b> Euro €</p>
+                        <p data-translate="15"><b>Idiomas oficiales:</b> Italiano</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="infoPrincipio">
-            <p>Italia es un país ubicado en Europa occidental cuyo nombre oficial es República Italiana. Es miembro de la Unión Europea y limita al norte con Francia, Suiza, Austria y Eslovenia, al oeste con el mar de Liguria y el mar Tirreno, al sur con el mar Mediterráneo, al sudeste con el mar Jónico y al este con el mar Adriático.</p>
-            <p>Es una de las principales economías mundiales y se destaca en la producción textil, naval, automotriz y de alimentos (como vinos y olivas). Su población es de 59 millones de habitantes que se distribuyen en las 20 regiones que constituyen el país. La mayoría de la población habla el idioma italiano.</p>
+        <div class="principleInfo">
+            <div class="principleInfoTextContainers">
+                <p data-translate="16">Italia es un país ubicado en Europa occidental cuyo nombre oficial es República Italiana. Es miembro de la Unión Europea y limita al norte con Francia, Suiza, Austria y Eslovenia, al oeste con el mar de Liguria y el mar Tirreno, al sur con el mar Mediterráneo, al sudeste con el mar Jónico y al este con el mar Adriático.</p>
+                <p data-translate="17">Es una de las principales economías mundiales y se destaca en la producción textil, naval, automotriz y de alimentos (como vinos y olivas). Su población es de 59 millones de habitantes que se distribuyen en las 20 regiones que constituyen el país. La mayoría de la población habla el idioma italiano.</p>
+            </div>
         </div>
-    </section>
-        <figure id="imgLarga">
-            <img id="imgLarga1" src="images/imgLarga2.jpg" alt="">
+        <figure class="imgLong">
+            <img id="imgLong1" src="images/imgLarga2.jpg" alt="">
         </figure>
-    <section class="arquitectura">
-        <h1 id="tituloarquitectura">Arquitectura</h1>
-        <div class="estructura1">
-            <div class="infoArquitectura">
-                <p>La arquitectura de Italia, a menudo llamada arquitectura italiana, se refiera a todas las formas de este arte en Italia. Italia posee el mayor patrimonio artístico, histórico y arquitectónico del mundo y el mayor número de sitios Patrimonio de la Humanidad Unesco</p>
-                <p>Italia es conocida por sus enormes avances técnicos en arquitectura, como lo fueron la construcción de arcos, cúpulas y estructuras similares durante el Imperio romano, la creación del Renacimiento arquitectónico a finales del siglo xiv, siendo el país de origen del Palladianismo, un estilo constructivo que inspiró movimientos como la arquitectura neoclásica</p>
+    </section>
+    <section id="showarchitecture">
+        <div class="architecture">
+            <div class="infoarchitecture">
+                <h2 data-translate="18">Arquitectura</h2>
+                <div class="containersTextInfoarchitecture">
+                    <p data-translate="19">La arquitectura de Italia, a menudo llamada arquitectura italiana, se refiera a todas las formas de este arte en Italia. Italia posee el mayor patrimonio artístico, histórico y arquitectónico del mundo y el mayor número de sitios Patrimonio de la Humanidad Unesco</p>
+                    <p data-translate="20">Italia es conocida por sus enormes avances técnicos en arquitectura, como lo fueron la construcción de arcos, cúpulas y estructuras similares durante el Imperio romano, la creación del Renacimiento arquitectónico a finales del siglo xiv, siendo el país de origen del Palladianismo, un estilo constructivo que inspiró movimientos como la arquitectura neoclásica</p>
+                </div>
             </div>
-            <div class="catedral">
-                <img id="imgCatedral" src="images/Catedral.png" alt="">
-            <div class="infoCatedral">
-                <h3 id="tituloCatedral">Catedral de Santa Maria del Fiore</h3>
-                <div class="descripcionCatedral">
-                    <p>La basílica catedral metropolitana de Santa María de la Flor (en italiano: Cattedrale di Santa Maria del Fiore), es la sede episcopal (en italiano duomo) de la arquidiócesis de Florencia, Italia. Es una de las obras maestras de la primera arquitectura renacentista del Renacimiento italiano.</p>
-                    <p>Símbolo de la riqueza y del poder de la capital toscana durante los siglos xiii y siglo xiv, la catedral florentina es uno de los edificios más grandes de la cristiandad. Su nombre se refiere al lirio, símbolo de Florencia, o al antiguo nombre del pueblo llamado Fiorenza. Pero, por otra parte, un documento del siglo xv afirma que la «flor» se refiere a Cristo.</p>
+            <div class="cathedral">
+                <div class="contentCathedral">
+                    <img id="imgStructures" src="images/Catedral.png" alt="">
+                    <div class="infoCathedral">
+                        <div class="cathedralTitleContainer">
+                            <h3 id="titleCathedral" data-translate="21">Catedral de Santa Maria del Fiore</h3>
+                        </div>
+                        <div class="containersTextInfoCathedral">
+                            <p data-translate="22">La basílica catedral metropolitana de Santa María de la Flor (en italiano: Cattedrale di Santa Maria del Fiore), es la sede episcopal (en italiano duomo) de la arquidiócesis de Florencia, Italia. Es una de las obras maestras de la primera arquitectura renacentista del Renacimiento italiano.</p>
+                            <p data-translate="23">Símbolo de la riqueza y del poder de la capital toscana durante los siglos xiii y siglo xiv, la catedral florentina es uno de los edificios más grandes de la cristiandad. Su nombre se refiere al lirio, símbolo de Florencia, o al antiguo nombre del pueblo llamado Fiorenza. Pero, por otra parte, un documento del siglo xv afirma que la «flor» se refiere a Cristo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="romanarch">
+                <div class="contentRomanarc">
+                    <img id="imgStructures" src="images/arcoDellaPace.png" alt="">
+                    <div class="infoarchRome">
+                        <h3 id="arcoTitleRome" data-translate="24">Arco della Pace</h3>
+                        <div class="containersTextInfoarcoRoma">
+                            <p data-translate="25">El Arco della Pace es un arco de triunfo situado en la Piazza Sempione de Milán, Italia, que formaba parte de la antigua Porta Sempione.</p>
+                            <p data-translate="26">El monumento fue proyectado por Luigi Cagnola. Las obras empezaron en 1807, fueron dirigidas por el mismo Cagnola y supervisadas por Domenico Moglia,1​ Nicola Pirovano,2​ Francesco Peverelli3​ y Bai Gio Battista4​5​ bajo el impulso del ayuntamiento de Milán y de Napoleón.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colosseum">
+                <div class="contentColosseum">
+                    <img id="imgStructures" src="images/Coliseo.png" alt="">
+                    <div class="infoColosseum">
+                            <h3 id="titleColosseum" data-translate="27">El Coliseo</h3>
+                        <div class="containersTextInfoColosseum">
+                            <p data-translate="28">El Coliseo o Anfiteatro Flavio es un anfiteatro de la época del Imperio romano, construido en el siglo I. Conocido originalmente como Anfiteatro Flavio (Amphitheatrum Flavium) pasa a ser llamado Coliseo (Colosseum) porque a su lado había una gran estatua, el Coloso de Nerón,2​ un monumento dedicado al emperador Nerón que posteriormente sufrió transformaciones y llegó a desaparecer.</p>
+                            <p data-translate="29">Los materiales utilizados en la construcción de este son bloques de travertino, hormigón, madera, ladrillo, piedra (toba), mármol y estuco.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pisaTower">
+                <div class="contentPisaTower">
+                    <img id="imgStructures" src="images/TorrePisa.jpg" alt="">
+                    <div class="infoPisaTower">
+                            <h3 id="titlePisaTower" data-translate="30">Torre de Pisa</h3>
+                        <div class="containersTextInfoPisaTower">
+                            <p data-translate="31">La torre de Pisa o torre inclinada de Pisa (en italiano: torre pendente di Pisa) es la torre campanario de la catedral de Pisa, situada en la plaza del Duomo de Pisa, en la ciudad del mismo nombre, municipio de la región italiana de la Toscana y capital de la provincia homónima de Italia.</p>
+                            <p data-translate="32">Su altura original era de 60 m aunque actualmente mide 56.67 m desde la base en el lado más alto y 55.86 m desde la base en su lado más bajo.1​ Su peso se estima en 14 500 toneladas y su inclinación es de unos 4°, extendiéndose 3.9 m de la vertical.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="showculture">
+        <div class="culture">
+            <div class="infoCulture">
+                <h2 data-translate="33">Cultura</h2>
+                <div class="containersTextInfoCulture">
+                    <p data-translate="34">Italia es un país con una gran diversidad de costumbres, tradiciones y festividades que se extienden a lo largo de todo su territorio. Debido a las olas migratorias que llevaron a ciudadanos italianos a instalarse en otros puntos del planeta, existe gran influencia de las costumbres italianas en diversos países, sobre todo en América.</p>
+                    <P data-translate="35">La cultura italiana es el conjunto de las manifestaciones culturales producidas en territorio italiano. Italia es reconocida por su arte, su cultura y sus numerosísimos monumentos, entre ellos la torre de Pisa y el Coliseo romano; así como por su gastronomía (platos italianos famosos son la pizza, la pasta, el risotto y el gelato), su vino, su estilo de vida, su pintura, su diseño, cine, teatro, literatura y música, en particular, la ópera. Todo esto ha creado una gran cultura.</P>
+                    <P data-translate="36">Italia es considerada la cuna de la civilización occidental y una superpotencia cultural.</P>
+                </div>
+                <figure id="containerImgCoverCulture">
+                    <img id="imgCoverCulture" src="images/imgPortadaCultura.png" alt="">
+                </figure>
+            </div>
+            <div class="titleWithCultureFlag">
+                <div class="TitleContainerWithCultureFlag">
+                    <div class="flag">
+                        <div id="green"></div>
+                        <div id="white"></div>
+                        <div id="red"></div>
+                    </div>
+                    <h2 id="tituloFineArtsCulture" data-translate="37">Las Bellas Artes en Italia</h2>
+                    <div class="flag">
+                        <div id="green"></div>
+                        <div id="white"></div>
+                        <div id="red"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="infoBellas">
+                <p data-translate="38">Las bellas artes en Italia han sido una fuerza dominante en la historia del arte occidental. Durante el Renacimiento, artistas como Leonardo da Vinci y Miguel Ángel produjeron obras maestras que aún son reverenciadas. El Barroco italiano, con Caravaggio y Bernini, destacó por su drama y emoción.</p>
+            </div>
+            <div class="bellasartes">
+                <div class="cardBellas">
+                    <img id="imgBellas" src="images/monaLisa.jpg" alt="">
+                    <div class="containersTextInfoBellas">
+                        <h2 data-translate="39">Pinturas</h2>
+                        <p data-translate="40">La arquitectura de Italia, a menudo llamada arquitectura italiana, se refiera a todas las formas de este arte en Italia. Italia posee el mayor patrimonio artístico, histórico y arquitectónico del mundo y el mayor número de sitios Patrimonio de la Humanidad Unesco</p>
+                        <p data-translate="41">Italia es conocida por sus enormes avances técnicos en arquitectura, como lo fueron la construcción de arcos, cúpulas y estructuras similares durante el Imperio romano, la creación del Renacimiento arquitectónico a finales del siglo xiv, siendo el país de origen del Palladianismo, un estilo constructivo que inspiró movimientos como la arquitectura neoclásica</p>
+                    </div>
+                </div> 
+                <div class="cardBellas">
+                    <img id="imgBellas" src="images/esculturas.jpg" alt="">
+                    <div class="containersTextInfoBellas">
+                        <h2 data-translate="42">Esculturas</h2>
+                        <p data-translate="43">La escultura italiana ha sido crucial en el desarrollo del arte mundial. Durante el Imperio Romano, la escultura exhibió un dominio técnico excepcional.</p>
+                        <p data-translate="44">El Renacimiento italiano vio surgir a artistas como Donatello, Miguel Ángel y Bernini, cuyas obras maestras aún son reverenciadas.</p>
+                        <p data-translate="45">En el siglo XIX, figuras como Antonio Canova revivieron el interés en la escultura neoclásica.</p>
+                    </div>
+                </div> 
+                <div class="cardBellas">
+                    <img id="imgBellas" src="images/musicaItaliana.jpg" alt="">
+                    <div class="containersTextInfoBellas">
+                        <h2 data-translate="46">Musica</h2>
+                        <p data-translate="47">La música en Italia ha sido una fuerza vital en la historia de la música occidental.</p>
+                        <p data-translate="48">Durante el Renacimiento, Italia fue pionera en la música coral polifónica, destacándose compositores como Palestrina y Monteverdi.</p>
+                        <p data-translate="49">En el Barroco, la ópera italiana, liderada por figuras como Verdi y Rossini, se convirtió en una forma de arte prominente.</p>
+                        <p data-translate="50">La Ópera nace en Florencia para el año 1600 y es el exponente por excelencia de la música italiana.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="titleWithCultureFlag">
+                <div class="TitleContainerWithCultureFlag">
+                    <div class="flag">
+                        <div id="green"></div>
+                        <div id="white"></div>
+                        <div id="red"></div>
+                    </div>
+                    <h2 id="titleLiteratureCulture" data-translate="51">Literatura</h2>
+                    <div class="flag">
+                        <div id="green"></div>
+                        <div id="white"></div>
+                        <div id="red"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="infoLiterature">
+                <p data-translate="52">La literatura italiana ha ejercido una profunda influencia en la literatura mundial a lo largo de los siglos. Desde la época de la Antigua Roma, donde las obras de autores como Virgilio y Ovidio establecieron estándares en poesía épica y lírica, hasta la Edad Media, donde la "Divina Comedia" de Dante Alighieri sentó las bases para la literatura occidental, Italia ha sido un centro de innovación y creatividad literaria.</p>
+                <p data-translate="53">Durante el Renacimiento, las obras de Petrarca y Boccaccio inspiraron una nueva ola de escritores en toda Europa, mientras que en el siglo XIX, Alessandro Manzoni y otros escritores italianos contribuyeron al desarrollo del realismo en la literatura.</p>
+                <p data-translate="54">En el siglo XX, autores como Italo Calvino y Umberto Eco continuaron desafiando las convenciones literarias, explorando nuevas formas de narrativa y temas universales.</p>
+            </div>
+            <div class="literature">
+                <div class="divineComedy">
+                    <img id="imgDivineComedy" src="images/divinaComedia.jpg" alt="">
+                    <div class="containersTextInfoDivineComedy">
+                        <h2  data-translate="55">Dante y la divina comedia</h2>
+                        <p data-translate="56">Dante está considerado el más grande poeta italiano de la Historia, y en él aparecen reflejadas las mismas tendencias poéticas del resto de escritores del dolce stil nuovo.</p>
+                        <p data-translate="57">En su libro La Vita Nuova (escrito en 1231 y cuyo título hace referencia a que su primer encuentro con Beatriz fue el comienzo de una nueva vida) aparece ya perfectamente reflejada su idealización del amor.</p>
+                        <p data-translate="58">El poema no tiene nada de terrenal o humano, y en él se aprecia que el poeta tiene permanentemente fijos los ojos en el cielo mientras canta a su dama.</p>
+                    </div>
+                </div>
+                <div class="petrarca">
+                    <img id="imgPetrarca" src="images/petrarca.jpg" alt="">
+                    <div class="containersTextInfoPetrarca">
+                        <h2 data-translate="59">Petrarca, la poesía del amor</h2>
+                        <p data-translate="60">Dos son las características principales de la actividad literaria de Petrarca: su interés por los clásicos y la novedad de los sentimientos humanos que se reflejan en su poesía.</p>
+                        <p data-translate="61">Sus Canzoniere están divididas en tres partes: la primera contiene los poemas escritos en vida de Laura, la segunda los poemas escritos tras su muerte y la tercera los Trionfi.</p>
+                        <p data-translate="62">El único y exclusivo tema de estos poemas es el amor, pero su tratamiento está lleno de variaciones en el concepto, la imaginería y los sentimientos, surgidos de variadas inspiraciones de la naturaleza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="showgastronomy">
+        <div class="gastronomy">
+            <div class="infoGastronomy">
+                <h2 data-translate="63">Gastronomia</h2>
+                <div class="containersTextInfoGastronomy">
+                    <p data-translate="64">La comida italiana es una de las más variadas y sabrosas del mundo. Desde los ricos y suculentos platos de pasta hasta los exquisitos postres, hay algo para todos los gustos. Los ingredientes frescos y abundantes, combinados con la tradición culinaria italiana, hacen que la cocina italiana sea única e inigualable. En este artículo exploraremos los sabores y técnicas que hacen que la gastronomía italiana sea tan excepcional.</p>
+                    <p data-translate="65">La comida italiana tiene origen urbano, nace en la sociedad y civilización italiana, Aunque es cierto que el verdadero origen de esta comida comenzó cuando después de caer el imperio romano, en ese momento las cocinas italianas se separan para desarrollar su propia cultura, alimentación y tradiciones.</p>
+                    <p data-translate="66">El momento que más influyó en la cocina italiana fue el descubrimiento de América, y con él, la llegada de nuevos ingredientes como la patata y el tomate, la base de muchos platos típicos de la gastronomía italiana.</p>
+                </div>
+                <div class="kitchen">
+                    <div class="titleWithCultureFlag">
+                        <div class="titleContainerWithFlagGastronomy">
+                            <div class="flag">
+                                <div id="green"></div>
+                                <div id="white"></div>
+                                <div id="red"></div>
+                            </div>
+                            <h2 id="titleGastronomyCulture" data-translate="67">La cocina del norte de italia</h2>
+                            <div class="flag">
+                                <div id="green"></div>
+                                <div id="white"></div>
+                                <div id="red"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <p id="infoCooking" data-translate="68">La comida tradicional del norte de Italia se caracteriza por las sopas, la pasta cocida y las carnes hervidas en vino y mantequilla. Usa menos aceite de oliva, tomate y pasta seca. El norte de Italia tiene como platos típicos el carpaccio, el vitello tonnato o vitel tonné y las crocchette di patate, además del risotto.</p>
+                    <div class="kitchencontent">
+                        <div class="carpaccio">
+                            <div class="card">
+                                <img id="imgCarpaccio" src="images/Carpaccio.jpg" alt="">
+                                <div id="cardTitleContainer">
+                                    <h2 id="cardTitle" data-translate="69">Carpaccio</h2>
+                                </div>
+                            </div>
+                            <div class="containersTextInfoCarpaccio">
+                                <h2 data-translate="70">Carpaccio</h2>
+                                <p data-translate="71">Esta plato consiste en láminas de carne o pescado crudo macerados con zumo de limón, aceite de oliva o queso.</p>
+                            </div>
+                        </div>
+                        <div class="risotto">
+                            <div class="card">
+                                <img id="imgRisotto" src="images/Risotto.jpg" alt="">
+                                <div id="CardTitleContainer">
+                                    <h2 id="cardTitle" data-translate="72">Risotto</h2>
+                                </div>
+                            </div>
+                            <div class="containersTextInfoRisotto">
+                                <h2 data-translate="73">Risotto</h2>
+                                <p data-translate="74">Esta típica comida italiana está hecha a base de arroz y queso. Existen diferentes tipos de risottos con distintos ingredientes (queso, calabaza, espinacas o mariscos) que le incorporan al arroz.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="kitchen">
+                    <div class="titleWithCultureFlag">
+                        <div class="titleContainerWithFlagGastronomy">
+                            <div class="flag">
+                                <div id="green"></div>
+                                <div id="white"></div>
+                                <div id="red"></div>
+                            </div>
+                            <h2 id="titleGastronomyCulture" data-translate="75">La cocina del sur de italia</h2>
+                            <div class="flag">
+                                <div id="green"></div>
+                                <div id="white"></div>
+                                <div id="red"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <p id="infoCooking" data-translate="76">La gastronomía del sur de Italia se caracteriza por los platos de elaboración sencilla. Sus ingredientes principales son el aceite de oliva, las hortalizas y las verduras típicas de la zona. Los platos de pasta más consumidos en esta parte de Italia son las populares pizzas, además de los espaguetis y los macarrones.</p>
+                    <div class="kitchencontent">
+                        <div class="pizza">
+                            <div class="card">
+                                <img id="imgPizza" src="images/Pizza.jpg" alt="">
+                                <div id="cardTitleContainer">
+                                    <h2 id="cardTitle" data-translate="77">Pizza</h2>
+                                </div>
+                            </div>
+                            <div class="pizzaInfoTextContainers">
+                                <h2 data-translate="78">Pizza</h2>
+                                <p data-translate="79">La receta italiana de la pizza consiste en una masa de pan de forma generalmente redonda cubierta con salsa de tomate y otros ingredientes como queso, jamón, champiñones o aceitunas.</p>
+                            </div>
+                        </div>
+                        <div class="macarrones">
+                            <div class="card">
+                                <img id="imgMacarrones" src="images/Macarrones.jpg" alt="">
+                                <div id="cardTitleContainer">
+                                    <h2 id="cardTitle" data-translate="80">Macarrones</h2>
+                                </div>
+                            </div>
+                            <div class="containersTextInfoMacarrones">
+                                <h2 data-translate="81">Macarrones</h2>
+                                <p data-translate="82">Los macarrones son una pasta elaborada con agua, harina de trigo y a veces, huevos. Tienen forma de tubitos y suelen ir acompañada de diferentes tipos de salsas y queso.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="kitchen">
+                    <div class="titleWithCultureFlag">
+                        <div class="titleContainerWithFlagGastronomy">
+                            <div class="flag">
+                                <div id="green"></div>
+                                <div id="white"></div>
+                                <div id="red"></div>
+                            </div>
+                            <h2 id="titleGastronomyCulture" data-translate="83">La cocina del centro de italia</h2>
+                            <div class="flag">
+                                <div id="green"></div>
+                                <div id="white"></div>
+                                <div id="red"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <p id="infoCooking" data-translate="84">La cocina del centro de Italia se caracteriza por tener ingredientes como aceite de oliva, el pecorino, legumbres, y los embutidos, además las carnes más consumidas en esta zona de Italia con el pollo, el cordero, el cerdo, el cabrito, el conejo, el jabalí y demás.
+                            Entre los platos que más sobresalientes del centro de Italia son Bistecca alla fiorentina, Zuppa di farro, Pollo in potacchio, Mazzarelle, entre otros.</p>
+                    <div class="kitchencontent">
+                        <div class="bistecca">
+                            <div class="card">
+                                <img id="imgBistecca" src="images/Bistecca.jpg" alt="">
+                                <div id="bisteccaCardTitleContainer">
+                                    <h2 id="bisteccaCardtitle" data-translate="85">Bistecca alla fiorentina</h2>
+                                </div>
+                            </div>
+                            <div class="containersTextBisteccaInfo">
+                                <h2 data-translate="86">Bistecca alla fiorentina</h2>
+                                <p data-translate="87">La receta italiana de la pizza consiste en una masa de pan de forma generalmente redonda cubierta con salsa de tomate y otros ingredientes como queso, jamón, champiñones o aceitunas.</p>
+                            </div>
+                        </div>
+                        <div class="mazzarelle">
+                            <div class="card">
+                                <img id="imgMazzarelle" src="images/Mozzarelle.jpg" alt="">
+                                <div id="cardTitleContainer">
+                                    <h2 id="cardTitle" data-translate="88">Mazzarelle</h2>
+                                </div>
+                            </div>
+                            <div class="containersTextInfoMazzarelle">
+                                <h2 data-translate="89">Mazzarelle</h2>
+                                <p data-translate="90">La mazzarelle es tripa de cordero envuelta en hojas de endibia atadas con intestinos de cordero.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p data-translate="footer">© - Santiago Cotte Velasquez - Todos los derechos reservados</p>
+    </footer>    
     <script src="back.js"></script>
 </body>
 </html>
